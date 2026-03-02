@@ -47,7 +47,7 @@ export function SimilarCreators({ currentSlug, category, className }: SimilarCre
                 className="flex items-center gap-3 p-3 hover:border-[var(--color-foreground)] hover:-translate-y-0.5 transition-all duration-200"
               >
                 <Avatar
-                  src={creator.avatar}
+                  src={`${import.meta.env.BASE_URL}${creator.avatar}`}
                   alt={creator.name}
                   fallback={getInitials(creator.name)}
                   size="sm"

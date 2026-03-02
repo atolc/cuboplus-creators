@@ -77,7 +77,7 @@ export function CreatorCard({ creator, index = 0, featured = false }: CreatorCar
           {/* Avatar — anchored to bottom of header */}
           <div className="relative z-10 mt-3">
             <Avatar
-              src={creator.avatar}
+              src={`${import.meta.env.BASE_URL}${creator.avatar}`}
               alt={creator.name}
               fallback={getInitials(creator.name)}
               size={featured ? 'lg' : 'md'}
