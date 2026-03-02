@@ -97,7 +97,7 @@ export function CreatorProfile() {
               {/* Avatar */}
               <div className="animate-[fadeIn_0.5s_ease-out_forwards] opacity-0 shrink-0" style={{ animationDelay: '0.05s' }}>
                 <Avatar
-                  src={meta.avatar}
+                  src={`${import.meta.env.BASE_URL}${creator.avatar}`}
                   alt={meta.name}
                   fallback={getInitials(meta.name)}
                   size="xl"
